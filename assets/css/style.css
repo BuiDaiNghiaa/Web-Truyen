@@ -263,6 +263,17 @@ body {
   height: auto;
   position: relative;
   margin-right: 7px;
+  transition: transform .2s;
+}
+
+.section-1 .section-1__item .item:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.section-1 .section-1__item .item:hover .desc {
+  z-index: 10;
 }
 
 .section-1 .section-1__item .item .item-link {
@@ -293,10 +304,11 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   color: #f4f4f4;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 400;
   display: block;
-  padding: 5px 0;
   width: 100%;
+  margin: 0;
 }
 /*End Section-1  */
 
