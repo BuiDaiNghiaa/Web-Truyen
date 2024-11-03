@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Trang danh sách truyện</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header_logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="header_menu">
+                    <ul class="menu">
+                        <li class="par-menu1"><i class="fa-solid fa-bars left"></i>Danh sách<i
+                                class="fa-solid fa-caret-down right"></i>
+                            <ul class="sub-menu1">
+                                <li>Truyện mới cập nhật</li>
+                                <li>Truyện Hot</li>
+                                <li>Truyện Full</li>
+                                <li>Tiên Hiệp Hay</li>
+                                <li>Kiếm Hiệp Hay</li>
+                                <li>Truyện Teen Hay</li>
+                                <li>Ngôn Tình Hay</li>
+                                <li>Ngôn Tình Ngược</li>
+                                <li>Ngôn Tình Sủng</li>
+                                <li>Ngôn Tình Hài</li>
+                                <li>Đam Mỹ Hài</li>
+                                <li>Đam Mỹ Hay</li>
+                                <li>Đam Mỹ H Văn</li>
+                                <li>Đam Mỹ Sắc</li>
+                                <li>Truyện Hay</li>
+                            </ul>
+                        </li>
+                        <li class="par-menu2"><i class="fa-solid fa-bars left"></i>Thể loại<i
+                                class="fa-solid fa-caret-down right"></i>
+                            <div class="par-slide-menu">
+                                <div class="slide-menu">
+                                    <ul class="sub-menu2">
+                                        <li>Tiên Hiệp</li>
+                                        <li>Kiếm Hiệp</li>
+                                        <li>Ngôn Tình</li>
+                                        <li>Đam Mỹ</li>
+                                        <li>Quan Trường</li>
+                                        <li>Võng Du</li>
+                                        <li>Khoa Huyễn</li>
+                                        <li>Hệ Thống</li>
+                                        <li>Huyền Huyễn</li>
+                                        <li>Dị Giới</li>
+                                        <li>Dị Năng</li>
+                                        <li>Quân Sự</li>
+                                        <li>Lịch Sử</li>
+                                        <li>Xuyên Không</li>
+                                    </ul>
+                                </div>
+                                <div class="slide-menu">
+                                    <ul class="sub-menu2">
+                                        <li>Xuyên Nhanh</li>
+                                        <li>Trọng Sinh</li>
+                                        <li>Trinh Thám</li>
+                                        <li>Thám Hiểm</li>
+                                        <li>Linh Dị</li>
+                                        <li>Sắc</li>
+                                        <li>Ngược</li>
+                                        <li>Sủng</li>
+                                        <li>Cung Đấu</li>
+                                        <li>Nữ Cường</li>
+                                        <li>Gia Đấu</li>
+                                        <li>Đông Phương</li>
+                                        <li>Đô Thị</li>
+                                        <li>Bách Hợp</li>
+                                    </ul>
+                                </div>
+                                <div class="slide-menu">
+                                    <ul class="sub-menu2">
+                                        <li>Hài Hước</li>
+                                        <li>Điền Văn</li>
+                                        <li>Cổ Đại</li>
+                                        <li>Mạt Thế</li>
+                                        <li>Truyện Teen</li>
+                                        <li>Phương Tây</li>
+                                        <li>Nữ Phụ</li>
+                                        <li>Light Novel</li>
+                                        <li>Việt Nam</li>
+                                        <li>Đoản Văn</li>
+                                        <li>Review sách</li>
+                                        <li>Khác</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="par-menu3"><i class="fa-solid fa-bars left"></i>Phân loại theo chương<i
+                                class="fa-solid fa-caret-down right"></i>
+                            <div class="slide-menu3">
+                                <ul class="sub-menu3">
+                                    <li>Dưới 100 chương</li>
+                                    <li>100 - 500 chương</li>
+                                    <li>500 - 1000 chương</li>
+                                    <li>Trên 1000 chương</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><i class="fa-solid fa-book left"></i>Truyện tranh</li>
+                        <li><i class="fa-solid fa-gear left"></i>Tùy chỉnh<i class="fa-solid fa-caret-down right"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_input">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <i class="fa-solid fa-magnifying-glass glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-title">
+                <span>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Truyện</a>
+                    /
+                    <a href="#">Tiên Hiệp Hay</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+
+    <!-- box list -->
+    <div class="box-list">
+        <div class="container">
+            <div class="box-list__wrap">
+                <!-- box list left -->
+                <div class="box-list__left">
+                    <div class="box-list__title">
+                        <h2>Tiên hiệp Hay</h2>
+                    </div>
+                    <div class="box-list__story">
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/doc-ton-tam-gioi.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Thần Đạo Đan Tôn</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Cô Đơn Địa Phi
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 5357</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/linh-vu-thien-ha.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Linh Vũ Thiên Hạ</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 5024</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/nguyen-ton.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Đấu Phá Thương Khung</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Thiên Tàm Thổ Đậu
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1641</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/than-dao-dan-ton-6060282.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Thế Giới Hoàn Mỹ</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Thần Đông
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 2015</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/the-gioi-hoan-my.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Phàm Nhân Tu Tiên</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vong Ngữ
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 2468</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/truyen-dau-pha-thuong-khung.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Tiên Nghịch</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Nhĩ Căn
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1976</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/doc-ton-tam-gioi.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Đấu La Đại Lục II (Tuyệt Thế Đường Môn)</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1382</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/linh-vu-thien-ha.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Ngạo Thế Cửu Trọng Thiên</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 2672</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/nguyen-ton.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Đế Tôn</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 2922</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/than-dao-dan-ton-6060282.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Dị Thế Tà Quân</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1284</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/the-gioi-hoan-my.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Kiếm Đạo Độc Tôn</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1593</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/truyen-dau-pha-thuong-khung.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Đường Chuyên</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1522</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/doc-ton-tam-gioi.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Tinh Thần Biến</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 671</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/linh-vu-thien-ha.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Kiếm Động Cửu Thiên</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1149</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/nguyen-ton.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#"> Kiếm Nghịch Thương Khung</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1868</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/the-gioi-hoan-my.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Đế Vương Sủng Ái</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 659</div>
+                        </div>
+                        <div class="box-list__item">
+                            <div class="box-list__img">
+                                <img src="./assets/images/truyen-dau-pha-thuong-khung.jpg"alt="">
+                            </div>
+                            <div class="box-list__name">
+                                <div class="box-list__above">
+                                    <i class="fa-solid fa-book"></i>
+                                    <a href="#">Mãng Hoang Kỷ</a>
+                                    <div class="box-list__green">Full</div>
+                                    <div class="box-list__red">Hot</div>
+                                </div>
+                                <div class="box-list__below">
+                                    <i class="fa-solid fa-pencil"></i>
+                                    Vũ Phong
+                                </div>
+                            </div>
+                            <div class="box-list__chapter">Chương 1827</div>
+                        </div>
+                    </div>
+                    <div class="box-list__page">
+                        <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>16</li>
+                            <li>21</li>
+                            <li>></li>
+                            <li>Cuối >></li>
+                            <li>
+                                <div>
+                                    Chọn trang
+                                    <i class="fa-solid fa-sort-up"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End box list left -->
+
+                <!-- box list right -->
+                <div class="box-list__right">
+                    <div class="box-list__content">Danh sách truyện tiên hiệp hay, chọn lọc được cập nhật liên tục. Truyện tiên hiệp thường kể về quá trình tu luyện và khám phá thế giới tu sĩ thần tiên đầy bí ẩn của nhân vật chính. Truyện thường có nội dung xoay quanh những đấu đá của các môn phái trong võ lâm, có liên quan đến các bí kíp võ công, ân oán của giang hồ.</div>
+                    <div class="box-list__category">
+                        <div class="box-list__category--list">
+                            <div class="box-list__category--title">
+                                <h3>
+                                    THỂ LOẠI TRUYỆN
+                                </h3>
+                            </div>
+                            <!--box list category -->
+                            <div class="box-list__category--wrap">
+                                <div class="box-list__category--left">
+                                    <a href="#">Tiên Hiệp</a>
+                                    <a href="#">Ngôn Tình</a>
+                                    <a href="#">Quan Trường</a>
+                                    <a href="#">Khoa Huyễn</a>
+                                    <a href="#">Huyền Huyễn</a>
+                                    <a href="#">Dị Năng</a>
+                                    <a href="#">Lịch Sử</a>
+                                    <a href="#">Xuyên Nhanh</a>
+                                    <a href="#">Trinh Thám</a>
+                                    <a href="#">Sủng</a>
+                                    <a href="#">Nữ Cường</a>
+                                    <a href="#">Đông Phương</a>
+                                    <a href="#">Điền Văn</a>
+                                    <a href="#">Mạt Thế</a>
+                                    <a href="#">Phương Tây</a>
+                                    <a href="#">Light Novel</a>
+                                    <a href="#">Đoản Văn</a>
+                                </div>
+                                <div class="box-list__category--right">
+                                    <a href="#">Kiếm Hiệp</a>
+                                    <a href="#">Đam Mỹ</a>
+                                    <a href="#">Võng Du</a>
+                                    <a href="#">Hệ Thống</a>
+                                    <a href="#">Dị Giới</a>
+                                    <a href="#">Quân Sự</a>
+                                    <a href="#">Xuyên Không</a>
+                                    <a href="#">Trọng Sinh</a>
+                                    <a href="#">Thám Hiểm</a>
+                                    <a href="#">Cung Đấu</a>
+                                    <a href="#">Gia Đấu</a>
+                                    <a href="#">Hài Hước</a>
+                                    <a href="#">Cổ Đại</a>
+                                    <a href="#">Mạt Thế</a>
+                                    <a href="#">Truyện Teen</a>
+                                    <a href="#">Việt Nam</a>
+                                    <a href="#">Khác</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End box list category -->
+
+                        <!-- box list hot -->
+                        <div class="box-list__hot">
+                            <div class="box-list__hot--title">
+                                <h3>TRUYỆN ĐANG HOT</h3>
+                            </div>
+                            <div class="box-list__date">
+                                <div>
+                                    <span>NGÀY</span>
+                                </div>
+                                <div>
+                                    <span>THÁNG</span>
+                                </div>
+                                <div>
+                                    <span>ALL TIME</span>
+                                </div>
+                            </div>
+                            <div class="box-list__hot--list">
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--red box-list__hot--transparent">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Thần Đạo Đan Tôn</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--green box-list__hot--transparent">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Linh Vũ Thiên Hạ</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Dị Giới,</a>
+                                            <a href="#" class="desc">Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--blue box-list__hot--transparent">
+                                        <span>3</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Đấu Phá Thương Khung</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Dị Giới,</a>
+                                            <a href="#" class="desc">Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>4</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Thế Giới Hoàn Mỹ</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Dị Giới,</a>
+                                            <a href="#" class="desc">Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>5</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Mê Vợ Không Lối Về</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Ngôn Tình,</a>
+                                            <a href="#" class="desc">Ngược,</a>
+                                            <a href="#" class="desc">Sủng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>6</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Phàm Nhân Tu Tiên</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Kiếm Hiệp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>7</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Cô Vợ Ngọt Ngào Có Chút Bất Lương</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Ngôn Tình,</a>
+                                            <a href="#" class="desc">Trọng Sinh,</a>
+                                            <a href="#" class="desc">Sủng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>8</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Đế Bá</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc"> Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>9</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Tiên Nghịch</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Kiếm Hiệp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-list__hot--item">
+                                    <div class="box-list__hot--transparent">
+                                        <span>10</span>
+                                    </div>
+                                    <div class="box-list__hot--name">
+                                        <a href="#" class="title">Nhất Niệm Vĩnh Hằng</a>
+                                        <div class="box-list__hot--category">
+                                            <a href="#" class="desc">Tiên Hiệp,</a>
+                                            <a href="#" class="desc">Huyền Huyễn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End box list hot -->
+                    </div>
+                </div>
+                <!-- End box list right -->
+            </div>
+        </div>
+    </div>
+    <!-- End box list -->
+
+    <!-- footer -->
+     <div class="footer">
+        <div class="container">
+            <div class="footer__contact">
+                Liên hệ: 
+                <a href="#">contact@truyenfull.io</a>
+            </div>
+            <div class="footer__content">
+                <span><b>Truyện Full</b>- Đọc truyện online, đọc truyện chữ, truyện hay. Website luôn cập nhật những bộ truyện mới thuộc các thể loại đặc sắc như truyện tiên hiệp, truyện kiếm hiệp, hay truyện ngôn tình một cách nhanh nhất. Hỗ trợ mọi thiết bị như di động và máy tính bảng.</span>
+                <div class="footer__img">
+                    <img src="./assets/images/88x31.png" alt="">
+                </div>
+                <br>
+                Website hoạt động dưới Giấy phép truy cập mở Creative Commons Attribution 4.0 International License
+            </div>
+        </div>
+     </div>
+    <!-- End footer -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
