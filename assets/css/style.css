@@ -89,7 +89,7 @@ body {
   position: absolute;
   list-style: none;
   left: -10px;
-  top: 40px;
+  top: 44px;
   background-color: #2F566D;
   padding: 10px 10px 10px 0;
   width: 190px;
@@ -146,7 +146,7 @@ body {
   position: absolute;
   background-color: #2F566D;
   display: none;
-  top: 40px;
+  top: 44px;
   left: -10px;
   z-index: 3;
 }
@@ -178,7 +178,7 @@ body {
   position: absolute;
   cursor: pointer;
   background-color: #2F566D;
-  top: 40px;
+  top: 44px;
   left: -10px;
   display: none;
   z-index: 3;
@@ -202,7 +202,51 @@ body {
   cursor: pointer;
 }
 
+.header_menu .par-menu4{
+  position: relative;
+  cursor: pointer;
+  
+}
 
+.header_menu .par-menu4 .dropdown-menu{
+  width: 300px;
+  height: 70px;
+  background-color: #2F566D;
+  position: absolute;
+  cursor: pointer;
+  top: 44px;
+  right: -10px;
+  display: none;
+  z-index: 3;
+}
+
+.header_menu .par-menu4 .active{
+  display: block;
+}
+
+.header_menu .par-menu4 .form-group{
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 20px 60px;
+}
+
+.header_menu .par-menu4 label{
+  padding-right: 30px;
+}
+
+.header_menu .par-menu4 .select{
+  flex: 1;
+}
+
+.header_menu .par-menu4 select{
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #555555;
+  border: 0;
+}
 /*End Header  */
 
 /* Main  */
@@ -571,6 +615,7 @@ body {
 }
 
 .box-list__title {
+  padding-bottom: 5px;
   border-bottom: 1px solid #CCCCCC;
 }
 
@@ -580,10 +625,12 @@ body {
     font-weight: 400;
     color: #4E4E4E;
     border-bottom: 1px solid #4E4E4E;
+    padding-bottom: 5px;
 }
 
 .box-list__item {
     display: flex;
+    width: 100%;
     border-bottom: 1px dashed #CCCCCC;
     margin-top: 10px;
     padding-bottom: 6px;
@@ -594,7 +641,7 @@ body {
 }
 
 .box-list__img {
-    width: 17%;
+    width: 200px;
     height: auto;
     margin-left: 10px;
     margin-right: 20px;
@@ -602,9 +649,11 @@ body {
 
 .box-list__img img {
     width: 100%;
+    object-fit: cover;
 }
 
 .box-list__name {
+    width: 60%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -660,7 +709,12 @@ body {
 
 .box-list__chapter {
     color: #31708F;
-    margin: auto 40px auto auto;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto 0;
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .box-list__page ul {
@@ -896,6 +950,16 @@ body {
 
 /* End box list hot */
 /* End box list left */
+
+@media(max-width: 991.98px){
+  .box-list__right{
+    display: none;
+  }
+
+  .box-list__left{
+    width: 100%
+  }
+}
 /* End box-list */
 
 /* footer */
