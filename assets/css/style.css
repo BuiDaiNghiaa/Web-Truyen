@@ -261,6 +261,17 @@ body {
   display: none!important;
 }
 
+.header_menu .menu li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-weight: 400;
+}
+
+.header_menu .menu li a:hover {
+  color: #FFE5B4;
+}
+
 @media (max-width: 991.98px) {
   .header_menu .menu {
     display: none;
@@ -675,6 +686,10 @@ body {
   border-radius: 7px;
   color: #fff;
   background-color: #2A5893;
+}
+
+.item-section-3 a {
+  text-decoration: none;
 }
 
 @media (max-width: 991.98px) {
