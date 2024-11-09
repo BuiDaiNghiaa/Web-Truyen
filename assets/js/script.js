@@ -1,57 +1,59 @@
-const menuParSub1 = document.querySelector(".par-menu1");
-const menuSub1 = document.querySelector(".sub-menu1");
-const menuSub2 = document.querySelector(".par-slide-menu");
-const menuSub3 = document.querySelector(".slide-menu3");
-const menuSub4 = document.querySelector(".dropdown-menu");
+const menus = [
+    { button: document.querySelector(".par-menu1"), menu: document.querySelector(".sub-menu1") },
+    { button: document.querySelector(".par-menu2"), menu: document.querySelector(".par-slide-menu") },
+    { button: document.querySelector(".par-menu3"), menu: document.querySelector(".slide-menu3") },
+];
 
-if(menuParSub1) {
-    menuParSub1.addEventListener("click", () => {
-        menuSub1.classList.toggle("active");
-        menuSub2.classList.remove("active");
-        menuSub3.classList.remove("active");
-        menuSub4.classList.remove("active");
-    })
+// Hàm đóng tất cả menu
+function closeAllMenus() {
+    menus.forEach(({ menu }) => menu.classList.remove("active"));
 }
 
-const menuParSub2 = document.querySelector(".par-menu2");
-if(menuParSub2) {
-    menuParSub2.addEventListener("click", () => {
-        menuSub2.classList.toggle("active");
-        menuSub1.classList.remove("active");
-        menuSub3.classList.remove("active");
-        menuSub4.classList.remove("active");
-    })
-}
-const menuParSub3 = document.querySelector(".par-menu3");
-if(menuParSub3) {
-    menuParSub3.addEventListener("click", () => {
-        menuSub3.classList.toggle("active");
-        menuSub2.classList.remove("active");
-        menuSub1.classList.remove("active");
-        menuSub4.classList.remove("active");
-    })
-}
+// Lặp qua từng phần tử menu để thêm sự kiện
+menus.forEach(({ button, menu }) => {
+    if (button && menu) {
+        button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            // Kiểm tra nếu menu đã mở
+            const isActive = menu.classList.contains("active");
 
-const menuParSub4 = document.querySelector(".par-menu4");
-if(menuParSub4){
-    menuParSub4.addEventListener("click", () => {
-        menuSub4.classList.toggle("active");
-        menuSub1.classList.remove("active");
-        menuSub2.classList.remove("active");
-        menuSub3.classList.remove("active");
-    })
-}
+            if (isActive) {
+                // Nếu menu đã mở, đóng nó
+                menu.classList.remove("active");
+            } else {
+                // Nếu không, đóng tất cả menu trước và mở menu hiện tại
+                closeAllMenus();
+                menu.classList.add("active");
+            }
+        });
+    }
+});
 
-// custom
-const select = menuParSub4.querySelector("select");
-if(select){
-    select.addEventListener("click", () => {
-        menuSub4.classList.toggle("active");
-    });
+// Đóng tất cả các menu khi click ra ngoài
+document.addEventListener("click", closeAllMenus);
 
-    select.addEventListener("change", () => {
-        menuSub4.classList.remove("active");
-    });
-}
-// End custom
 
+ // Click icon-menu-dropdown 
+ const iconMenuDropdown = document.querySelector(".menu-reponsive");
+ if(iconMenuDropdown) {
+     const ulDropdown = document.querySelector(".menu-drop");
+     iconMenuDropdown.addEventListener("click", () => {
+         ulDropdown.classList.toggle("block");
+     })
+ }
+
+
+ // Select all menu items with a corresponding sub-menu
+ const menuItems = document.querySelectorAll('.menu-edit');
+
+ // Add a click event listener to each main menu item
+ menuItems.forEach((menuItem, index) => {
+     menuItem.addEventListener('click', () => {
+         // Toggle the display of the corresponding sub-menu
+         const subMenu = menuItem.nextElementSibling;
+         if (subMenu && subMenu.classList.contains('sub-menu')) {
+             subMenu.classList.toggle('active');
+             menuItem.classList.toggle('active');
+         }
+     });
+ });
