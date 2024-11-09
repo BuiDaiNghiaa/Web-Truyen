@@ -1406,7 +1406,7 @@ footer {
 
 .introduce {
   max-width: 35%;
-  margin-left: 165px;
+  /* margin-left: 165px; */
   line-height: 25px;
   font-size: 15px;
 }
@@ -1450,7 +1450,7 @@ footer {
 
 .image-footer {
   margin-top: 20px;
-  margin-left: 165px;
+  /* margin-left: 165px; */
 }
 
 .image-footer a::selection {
