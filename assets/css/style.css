@@ -1115,6 +1115,17 @@ padding-bottom: 5px;
   width: 70%;
 }
 
+@media(max-width: 576px){
+  .footer__content{
+    display: inline;
+  }
+
+  .footer__content span{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 /* End footer */
 
 /* breadcrumb */
