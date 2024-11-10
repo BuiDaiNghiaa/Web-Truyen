@@ -258,7 +258,7 @@ body {
 }
 
 .none {
-  display: none!important;
+  display: none;
 }
 
 .header_menu .menu li a {
@@ -271,6 +271,7 @@ body {
 .header_menu .menu li a:hover {
   color: #FFE5B4;
 }
+
 
 @media (max-width: 991.98px) {
   .header_menu .menu {
