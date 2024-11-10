@@ -1204,7 +1204,7 @@ padding-bottom: 5px;
   font-size: 12px;
 }
 
-.brief-desc {
+.box-detail .brief-desc {
   border-right: 1px solid rgb(219, 219, 219);
   padding: -5px;
   padding-right: 40px;
@@ -1212,7 +1212,7 @@ padding-bottom: 5px;
   font-family: "Roboto Condensed", Tahoma, sans-serif;
 }
 
-.brief-desc strong::selection {
+.box-detail .brief-desc strong::selection {
   color: white;
   background-color: rgb(78, 78, 78);
 }
@@ -1267,7 +1267,7 @@ padding-bottom: 5px;
   text-align: center;
 }
 
-.flex {
+.box-detail .flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1414,7 +1414,7 @@ padding-bottom: 5px;
   padding-bottom: 5px;
 }
 
-.title-same-author div::selection {
+.box-detail .title-same-author div::selection {
   color: white;
   background-color: rgb(78, 78, 78);
 }
@@ -1632,7 +1632,7 @@ padding-bottom: 5px;
 /* End box detail hot */
 /* End box right */
 
-.comment-chapter .title-comment {
+.box-detail .comment-chapter .title-comment {
   font-size: 20px;
   color: #4E4E4E;
   border-bottom: 1px solid rgb(193, 189, 189);
@@ -1640,18 +1640,18 @@ padding-bottom: 5px;
   max-width: 65%;
 }
 
-.comment-chapter .title-comment div {
+.box-detail .comment-chapter .title-comment div {
   display: inline;
   border-bottom: 1px solid black;
   padding-bottom: 5px;
 }
 
-.title-comment div::selection {
+.box-detail .title-comment div::selection {
   color: white;
   background-color: rgb(78, 78, 78);
 }
 
-.comment {
+.box-detail .comment {
   display: flex;
   margin-top: 15px;
   border-bottom: 1px solid rgb(222, 218, 218);
@@ -1659,17 +1659,17 @@ padding-bottom: 5px;
   gap: 10px;
 }
 
-#new-comment {
+.box-detail #new-comment {
   /* margin-left: 525px; */
   margin-bottom: 30px;
 }
 
-.content-comment {
+.box-detail .content-comment {
   margin-top: 30px;
   display: flex;
 }
 
-.box1 {
+.box-detail .box1 {
   width: 70px;
   height: 70px;
   border: 1px solid rgb(193, 189, 189);
@@ -1679,19 +1679,19 @@ padding-bottom: 5px;
   background-size: contain;
 }
 
-.content-comment .content {
+.box-detail .content-comment .content {
   max-width: 114%;
   padding-right: 550px;
   border: 1px solid rgb(193, 189, 189);
 }
 
-.old-comment {
+.box-detail .old-comment {
   margin-top: 25px;
   display: flex;
   max-width: 65%;
 }
 
-.box2 {
+.box-detail .box2 {
   width: 70px;
   height: 70px;
   border: 1px solid rgb(193, 189, 189);
@@ -1702,32 +1702,32 @@ padding-bottom: 5px;
   background-size: contain;
 }
 
-.content-old-comment p {
+.box-detail .content-old-comment p {
   max-width: 100%;
 }
 
-.content-old-comment h5 {
+.box-detail .content-old-comment h5 {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 15px;
   color: rgb(29, 72, 144);
 }
 
-.reply {
+.box-detail .reply {
   margin-left: 75px;
 
 }
 
-.reply span {
+.box-detail .reply span {
   margin-right: 10px;
 }
 
-span a {
+.box-detail span a {
   color: rgb(88, 123, 189);
 
 }
 
-h5 a {
+.box-detail h5 a {
   text-decoration: none;
   color: rgb(29, 72, 144);
 }
