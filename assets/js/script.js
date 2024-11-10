@@ -37,8 +37,10 @@ document.addEventListener("click", closeAllMenus);
  const iconMenuDropdown = document.querySelector(".menu-reponsive");
  if(iconMenuDropdown) {
      const ulDropdown = document.querySelector(".menu-drop");
+     const divDropdown = document.querySelector(".header-menu-drop");
      iconMenuDropdown.addEventListener("click", () => {
          ulDropdown.classList.toggle("block");
+         divDropdown.classList.toggle("none");
      })
  }
 

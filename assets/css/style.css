@@ -258,7 +258,7 @@ body {
 }
 
 .none {
-  display: none!important;
+  display: none;
 }
 
 .header_menu .menu li a {
@@ -272,9 +272,6 @@ body {
   color: #FFE5B4;
 }
 
-.none {
-  display: none;
-}
 
 @media (max-width: 991.98px) {
   .header_menu .menu {
