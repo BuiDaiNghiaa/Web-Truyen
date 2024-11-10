@@ -1812,3 +1812,120 @@ footer {
 
 /*End  Info-page  */
 
+.title-chapter {
+  text-align: center;
+  font-size: 20px;
+  color: rgb(102, 153, 0);
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Roboto Condensed", Tahoma, sans-serif;
+  margin-top: 30px;
+}
+
+.name-chapter {
+  text-align: center;
+  font-size: 15px;
+  line-height: 35px;
+  font-family: "Roboto Condensed", Tahoma, sans-serif;
+  color: gray;
+}
+
+.header-chapter {
+  margin-right: 200px;
+}
+
+.next-back__chapter {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.next-back__chapter a {
+  text-decoration: none;
+  color: white;
+}
+
+.back-chapter {
+  /* width: 12%; */
+  /* height: 40px; */
+  background-color: rgb(68, 157, 68);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  color: white;
+}
+
+.list-chapter-icon {
+  width: 3%;
+  height: 40px;
+  background-color: rgb(68, 157, 68);
+  margin: 0 5px 0 5px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+
+}
+
+.next-chapter {
+  /* width: 12%; */
+  /* height: 40px; */
+  background-color: rgb(68, 157, 68);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  color: white;
+}
+
+.top-icon-chapter-start {
+  text-align: center;
+
+}
+
+.under-icon-chapter-end {
+  text-align: center;
+}
+
+.icon-chapter-top {
+  background-image: url(https://png.pngtree.com/png-clipart/20230817/original/pngtree-wind-icon-logo-design-template-vector-curve-blow-cold-vector-picture-image_10945794.png);
+  background-size: cover;
+  background-position: center;
+  width: 220px;
+  height: 40px;
+  display: inline-block;
+}
+
+.under-icon-chapter-start {
+  text-align: center;
+}
+
+.icon-chapter-under {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/047/491/929/non_2x/graphic-with-a-black-elegant-plant-ornament-on-an-isolated-background-png.png);
+  background-position: center;
+  width: 150px;
+  height: 85px;
+  background-color: rgb(244, 244, 244);
+  background-size: contain;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.content-chapter {
+  display: inline-block;
+}
+
+.content {
+  font-family: "Palatino Linotype", "Arial", "Times New Roman", sans-serif;
+  font-size: 19px;
+  margin: 0 auto 0 auto;
+}
+
+
+.text-center {
+  /* display: inline-flex; */
+  text-align: center;
+  margin-top: 10px;
+}
+
