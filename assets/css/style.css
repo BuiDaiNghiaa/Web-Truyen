@@ -1864,6 +1864,16 @@ footer {
   background-color: rgb(78, 78, 78);
 }
 
+.image-footer a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+}
+
+.image-footer a:hover {
+  text-decoration: underline;
+}
+
 /*End  Info-page  */
 
 .title-chapter {
